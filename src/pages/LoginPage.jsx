@@ -115,7 +115,7 @@ export default function LoginPage() {
               ))}
             </div>
             <p className="text-body-sm" style={{ color: 'var(--color-on-surface-variant)' }}>
-              Únete a más de <strong style={{ color: 'var(--color-on-surface)' }}>5,000+ estudiantes</strong> activos.
+              Empieza hoy y forma parte de una <strong style={{ color: 'var(--color-on-surface)' }}>comunidad en crecimiento</strong>.
             </p>
           </motion.div>
         </div>
