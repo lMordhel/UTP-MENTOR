@@ -1,0 +1,192 @@
+/* ============================================
+   UTP Mentors — Global Styles
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import './variables.css';
+@import './animations.css';
+
+/* ── Reset ── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--text-body-md-size);
+  line-height: var(--text-body-md-line);
+  font-weight: var(--text-body-md-weight);
+  color: var(--color-on-background);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* ── Typography Utilities ── */
+.text-headline-xl {
+  font-size: var(--text-headline-xl-size);
+  line-height: var(--text-headline-xl-line);
+  font-weight: var(--text-headline-xl-weight);
+  letter-spacing: var(--text-headline-xl-spacing);
+}
+
+.text-headline-lg {
+  font-size: var(--text-headline-lg-size);
+  line-height: var(--text-headline-lg-line);
+  font-weight: var(--text-headline-lg-weight);
+  letter-spacing: var(--text-headline-lg-spacing);
+}
+
+.text-headline-lg-mobile {
+  font-size: var(--text-headline-lg-mobile-size);
+  line-height: var(--text-headline-lg-mobile-line);
+  font-weight: var(--text-headline-lg-mobile-weight);
+}
+
+.text-headline-md {
+  font-size: var(--text-headline-md-size);
+  line-height: var(--text-headline-md-line);
+  font-weight: var(--text-headline-md-weight);
+}
+
+.text-body-lg {
+  font-size: var(--text-body-lg-size);
+  line-height: var(--text-body-lg-line);
+  font-weight: var(--text-body-lg-weight);
+}
+
+.text-body-md {
+  font-size: var(--text-body-md-size);
+  line-height: var(--text-body-md-line);
+  font-weight: var(--text-body-md-weight);
+}
+
+.text-body-sm {
+  font-size: var(--text-body-sm-size);
+  line-height: var(--text-body-sm-line);
+  font-weight: var(--text-body-sm-weight);
+}
+
+.text-label-md {
+  font-size: var(--text-label-md-size);
+  line-height: var(--text-label-md-line);
+  font-weight: var(--text-label-md-weight);
+  letter-spacing: var(--text-label-md-spacing);
+}
+
+.text-label-sm {
+  font-size: var(--text-label-sm-size);
+  line-height: var(--text-label-sm-line);
+  font-weight: var(--text-label-sm-weight);
+}
+
+/* ── Custom Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-outline);
+  border-radius: 10px;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ── Material Symbols ── */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+}
+
+/* ── Page Transition Wrapper ── */
+.page-wrapper {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* ── Glass Effect ── */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ── Truncate ── */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ── SR Only ── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

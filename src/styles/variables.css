@@ -1,0 +1,168 @@
+/* ============================================
+   UTP Mentors — Design System Tokens
+   Material Design 3 Palette + UTP Branding
+   ============================================ */
+
+:root {
+  /* ── Primary (UTP Red) ── */
+  --color-primary: #9e001f;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #c8102e;
+  --color-on-primary-container: #ffdad8;
+  --color-primary-fixed: #ffdad8;
+  --color-primary-fixed-dim: #ffb3b1;
+  --color-on-primary-fixed: #410007;
+  --color-on-primary-fixed-variant: #92001c;
+  --color-inverse-primary: #ffb3b1;
+
+  /* ── Secondary (Academic Blue) ── */
+  --color-secondary: #3d5ca2;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #94b2fe;
+  --color-on-secondary-container: #204287;
+  --color-secondary-fixed: #dae2ff;
+  --color-secondary-fixed-dim: #b1c5ff;
+  --color-on-secondary-fixed: #001946;
+  --color-on-secondary-fixed-variant: #224489;
+
+  /* ── Tertiary ── */
+  --color-tertiary: #4a4d4e;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #626566;
+  --color-on-tertiary-container: #e1e2e3;
+  --color-tertiary-fixed: #e1e3e4;
+  --color-tertiary-fixed-dim: #c5c7c8;
+  --color-on-tertiary-fixed: #191c1d;
+  --color-on-tertiary-fixed-variant: #454748;
+
+  /* ── Error ── */
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  /* ── Surface & Background ── */
+  --color-surface: #f6faff;
+  --color-surface-dim: #d2dbe4;
+  --color-surface-bright: #f6faff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #ecf5fe;
+  --color-surface-container: #e6eff8;
+  --color-surface-container-high: #e0e9f2;
+  --color-surface-container-highest: #dbe4ed;
+  --color-on-surface: #141d23;
+  --color-on-surface-variant: #5c403f;
+  --color-surface-variant: #dbe4ed;
+  --color-surface-tint: #bf0229;
+  --color-inverse-surface: #293138;
+  --color-inverse-on-surface: #e9f2fb;
+  --color-background: #f6faff;
+  --color-on-background: #141d23;
+
+  /* ── Outline ── */
+  --color-outline: #906f6e;
+  --color-outline-variant: #e5bdbb;
+
+  /* ── Semantic ── */
+  --color-success: #2e7d32;
+  --color-warning: #f9a825;
+
+  /* ── Typography ── */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Headline XL */
+  --text-headline-xl-size: 40px;
+  --text-headline-xl-line: 48px;
+  --text-headline-xl-weight: 700;
+  --text-headline-xl-spacing: -0.02em;
+
+  /* Headline LG */
+  --text-headline-lg-size: 32px;
+  --text-headline-lg-line: 40px;
+  --text-headline-lg-weight: 700;
+  --text-headline-lg-spacing: -0.01em;
+
+  /* Headline LG Mobile */
+  --text-headline-lg-mobile-size: 28px;
+  --text-headline-lg-mobile-line: 36px;
+  --text-headline-lg-mobile-weight: 700;
+
+  /* Headline MD */
+  --text-headline-md-size: 24px;
+  --text-headline-md-line: 32px;
+  --text-headline-md-weight: 600;
+
+  /* Body LG */
+  --text-body-lg-size: 18px;
+  --text-body-lg-line: 28px;
+  --text-body-lg-weight: 400;
+
+  /* Body MD */
+  --text-body-md-size: 16px;
+  --text-body-md-line: 24px;
+  --text-body-md-weight: 400;
+
+  /* Body SM */
+  --text-body-sm-size: 14px;
+  --text-body-sm-line: 20px;
+  --text-body-sm-weight: 400;
+
+  /* Label MD */
+  --text-label-md-size: 14px;
+  --text-label-md-line: 16px;
+  --text-label-md-weight: 600;
+  --text-label-md-spacing: 0.01em;
+
+  /* Label SM */
+  --text-label-sm-size: 12px;
+  --text-label-sm-line: 16px;
+  --text-label-sm-weight: 500;
+
+  /* ── Spacing (8px linear scale) ── */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-container-mobile: 16px;
+  --space-container-desktop: 40px;
+  --space-gutter: 16px;
+
+  /* ── Border Radius ── */
+  --radius-sm: 4px;
+  --radius-default: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* ── Elevation / Shadows ── */
+  --shadow-sm: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0px 4px 12px rgba(20, 29, 35, 0.08);
+  --shadow-lg: 0px 8px 24px rgba(20, 29, 35, 0.12);
+  --shadow-xl: 0px 16px 48px rgba(20, 29, 35, 0.16);
+  --shadow-primary: 0px 4px 16px rgba(158, 0, 31, 0.15);
+  --shadow-up: 0 -2px 10px rgba(0, 0, 0, 0.05);
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+  --transition-spring: 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Z-Index ── */
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-nav: 40;
+  --z-topbar: 50;
+  --z-sidebar: 60;
+  --z-modal-overlay: 90;
+  --z-modal: 100;
+
+  /* ── Layout ── */
+  --topbar-height: 64px;
+  --bottomnav-height: 80px;
+  --sidebar-width: 320px;
+  --max-content-width: 1280px;
+}

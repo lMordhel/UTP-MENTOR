@@ -1,0 +1,144 @@
+/* SearchTutorsPage Styles */
+.search-page__inner {
+  padding: var(--space-lg) var(--space-container-mobile);
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .search-page__inner { padding: var(--space-lg) var(--space-container-desktop); }
+}
+
+/* ── Search Bar ── */
+.search-bar-section { margin-bottom: var(--space-lg); }
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 0 var(--space-md);
+  height: 56px;
+  background: var(--color-surface-container-low);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.search-bar--focused {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(158, 0, 31, 0.1);
+}
+
+.search-bar__input {
+  flex: 1;
+  height: 100%;
+  font-size: var(--text-body-md-size);
+  color: var(--color-on-surface);
+  background: transparent;
+}
+
+.search-bar__input::placeholder { color: var(--color-on-surface-variant); opacity: 0.6; }
+
+/* ── Filters ── */
+.search-filters {
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  padding-bottom: var(--space-sm);
+  margin-bottom: var(--space-xl);
+}
+
+/* ── Tutor Grid ── */
+.search-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-md);
+}
+
+/* ── Tutor Card ── */
+.tutor-card {
+  background: var(--color-surface-container-lowest);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.tutor-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+.tutor-card__profile {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.tutor-card__avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-default);
+  overflow: hidden;
+  border: 2px solid var(--color-primary-container);
+  background: var(--color-surface-variant);
+  flex-shrink: 0;
+}
+.tutor-card__avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+.tutor-card__name { font-size: 18px; color: var(--color-on-surface); }
+
+.tutor-card__rating {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background: var(--color-surface-container);
+  padding: 4px 8px;
+  border-radius: var(--radius-default);
+}
+
+.tutor-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+}
+
+.tutor-card__footer {
+  margin-top: auto;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-outline-variant);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tutor-card__availability {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── FAB ── */
+.search-fab {
+  position: fixed;
+  bottom: calc(var(--bottomnav-height) + 16px);
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: var(--z-nav);
+}
+
+@media (min-width: 768px) {
+  .search-fab { bottom: 24px; }
+}

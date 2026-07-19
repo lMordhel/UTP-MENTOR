@@ -1,0 +1,200 @@
+/* LoginPage Styles */
+.login-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .login-page {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ── Branding Panel ── */
+.login-branding {
+  display: none;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-2xl);
+  background: var(--color-surface-container-low);
+  border-right: 1px solid rgba(229, 189, 187, 0.3);
+}
+
+@media (min-width: 1024px) {
+  .login-branding { display: flex; }
+}
+
+.login-branding__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 520px;
+}
+
+.login-branding__logo-box {
+  width: 64px;
+  height: 64px;
+  background: var(--color-primary-container);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-md);
+  box-shadow: 0 8px 24px rgba(200, 16, 46, 0.2);
+}
+
+.login-branding__title {
+  color: var(--color-on-background);
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-md);
+}
+
+.login-branding__accent {
+  color: var(--color-primary);
+}
+
+.login-branding__subtitle {
+  color: var(--color-on-surface-variant);
+  margin-bottom: var(--space-xl);
+}
+
+.login-branding__features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+}
+
+.login-feature-card {
+  padding: var(--space-md);
+  background: var(--color-surface);
+  border: 1px solid rgba(229, 189, 187, 0.5);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.login-branding__community {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.login-avatars {
+  display: flex;
+}
+
+.login-avatars__img {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-surface);
+  object-fit: cover;
+  margin-left: -12px;
+}
+.login-avatars__img:first-child { margin-left: 0; }
+
+/* ── Form Section ── */
+.login-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  background: var(--color-surface);
+}
+
+@media (min-width: 768px) {
+  .login-form-section { padding: var(--space-2xl); }
+}
+
+.login-form-wrapper {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form__header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.login-form__logo-row {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.login-form__logo-square {
+  width: 48px;
+  height: 48px;
+  background: var(--color-primary);
+  border-radius: var(--radius-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+}
+
+.login-form__greeting {
+  color: var(--color-on-background);
+  margin-bottom: var(--space-xs);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.login-form__password-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xs);
+}
+
+.login-form__forgot {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: text-decoration var(--transition-fast);
+}
+.login-form__forgot:hover { text-decoration: underline; }
+
+.login-form__eye-btn {
+  display: flex;
+  align-items: center;
+  color: var(--color-outline);
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+.login-form__eye-btn:hover { color: var(--color-on-surface); }
+
+.login-form__divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+}
+
+.login-form__divider-line {
+  flex: 1;
+  height: 1px;
+  background: rgba(229, 189, 187, 0.3);
+}
+
+.login-form__footer {
+  margin-top: var(--space-2xl);
+  text-align: center;
+}
+
+.login-form__link {
+  text-decoration: underline;
+  color: inherit;
+  transition: color var(--transition-fast);
+}
+.login-form__link:hover { color: var(--color-primary); }
